@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="付康的机器人项目视频展示，包含 VLA 仿真操作、机械臂擦拭与折叠、遥操作、全身运动和灵巧手抓取。">
+  <title>付康 | 机器人项目视频展示</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">
+      <p class="eyebrow">Robotics Portfolio</p>
+      <h1>付康 · 机器人项目视频展示</h1>
+      <p class="intro">哈尔滨工业大学 · 机器人工程硕士在读<br>研究方向：VLA、具身智能、模仿学习与接触控制</p>
+      <p class="contact"><a href="mailto:fk15856871430@gmail.com">fk15856871430@gmail.com</a><a href="tel:15856871430">158-5687-1430</a><span>5 个分组 · 13 段演示</span></p>
+      <nav aria-label="项目分组"><a href="#vla">VLA 策略</a><a href="#manipulation">机械臂操作</a><a href="#teleoperation">遥操作</a><a href="#motion">全身运动</a><a href="#dexterous">灵巧手</a></nav>
+    </header>
+    <div id="projects" class="project-gallery">
+      <section id="vla" class="project-section" aria-labelledby="vla-title">
+        <div class="project-heading"><div><p class="project-index">项目 01 · VLA / 仿真验证</p><h2 id="vla-title">全身 VLA 策略与操作任务</h2></div><p>基于示教数据训练全身视觉动作策略，验证抓瓶转移与药盒分拣等操作任务。以下两段为仿真演示。</p></div>
+        <div class="project-videos">
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/psi0-bottle-transfer.jpg" aria-label="ψ₀ 抓瓶转移"><source src="assets/web-videos/psi0-bottle-transfer.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>仿真</span><span>0:34</span></div><h3>ψ₀ 抓瓶转移</h3><p>人形机器人在双工作台之间完成抓瓶与转移任务。</p><a href="assets/web-videos/psi0-bottle-transfer.mp4" target="_blank" rel="noopener" aria-label="单独播放：ψ₀ 抓瓶转移">单独播放 ↗</a></div>
+          </article>
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/medicine-sorting.jpg" aria-label="药盒分拣"><source src="assets/web-videos/medicine-sorting.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>仿真 · 多视角</span><span>0:45</span></div><h3>药盒分拣</h3><p>多视角记录药盒抓取与分拣过程，展示操作策略执行。</p><a href="assets/web-videos/medicine-sorting.mp4" target="_blank" rel="noopener" aria-label="单独播放：药盒分拣">单独播放 ↗</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="manipulation" class="project-section" aria-labelledby="manipulation-title">
+        <div class="project-heading"><div><p class="project-index">项目 02 · VLA / 模仿学习 / 接触控制</p><h2 id="manipulation-title">机械臂接触控制与柔性物体操作</h2></div><p>展示机械臂擦拭的仿真与真机执行，以及基于模仿学习的真实毛巾折叠任务。</p></div>
+        <div class="project-videos">
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/whiteboard-wiping-sim.jpg" aria-label="机械臂擦白板 · 仿真"><source src="assets/web-videos/whiteboard-wiping-sim.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>仿真</span><span>0:30</span></div><h3>机械臂擦白板 · 仿真</h3><p>仿真环境中的机械臂擦拭任务执行记录。</p><a href="assets/web-videos/whiteboard-wiping-sim.mp4" target="_blank" rel="noopener" aria-label="单独播放：机械臂擦白板 · 仿真">单独播放 ↗</a></div>
+          </article>
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/whiteboard-wiping.jpg" aria-label="VLA + 导纳控制擦白板"><source src="assets/web-videos/whiteboard-wiping.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>真机</span><span>1:22</span></div><h3>VLA + 导纳控制擦白板</h3><p>高层策略规划擦拭轨迹，底层导纳控制修正法向接触力。</p><a href="assets/web-videos/whiteboard-wiping.mp4" target="_blank" rel="noopener" aria-label="单独播放：VLA + 导纳控制擦白板">单独播放 ↗</a></div>
+          </article>
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/towel-folding.jpg" aria-label="松灵机械臂毛巾折叠"><source src="assets/web-videos/towel-folding.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>真机</span><span>1:11</span></div><h3>松灵机械臂毛巾折叠</h3><p>基于 300 条示教训练 π₀.₅ 策略，完成柔性毛巾的对折与叠放。</p><a href="assets/web-videos/towel-folding.mp4" target="_blank" rel="noopener" aria-label="单独播放：松灵机械臂毛巾折叠">单独播放 ↗</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="teleoperation" class="project-section" aria-labelledby="teleoperation-title">
+        <div class="project-heading"><div><p class="project-index">项目 03 · 遥操作 / 数据采集</p><h2 id="teleoperation-title">全身与机械臂遥操作</h2></div><p>围绕人形机器人和自研机械臂搭建遥操作系统，为模仿学习与 VLA 策略提供示教数据。</p></div>
+        <div class="project-videos three-columns">
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/sonic-teleop.jpg" aria-label="Sonic 全身遥操作"><source src="assets/web-videos/sonic-teleop.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>真机 · 宇树 G1</span><span>0:32</span></div><h3>Sonic 全身遥操作</h3><p>展示人形机器人上肢动作、下肢移动与全身协调控制。</p><a href="assets/web-videos/sonic-teleop.mp4" target="_blank" rel="noopener" aria-label="单独播放：Sonic 全身遥操作">单独播放 ↗</a></div>
+          </article>
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/noitom-teleop.jpg" aria-label="Noitom 动捕遥操作"><source src="assets/web-videos/noitom-teleop.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>真机 · 宇树 G1</span><span>0:12</span></div><h3>Noitom 动捕遥操作</h3><p>通过动捕服映射操作者动作，演示机器人跟随与遥操作。</p><a href="assets/web-videos/noitom-teleop.mp4" target="_blank" rel="noopener" aria-label="单独播放：Noitom 动捕遥操作">单独播放 ↗</a></div>
+          </article>
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/vr-arm-teleop.jpg" aria-label="VR 自研机械臂遥操作"><source src="assets/web-videos/vr-arm-teleop.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>真机 · 自研机械臂</span><span>0:13</span></div><h3>VR 自研机械臂遥操作</h3><p>使用 VR 控制器映射末端运动，完成机械臂交互与示教。</p><a href="assets/web-videos/vr-arm-teleop.mp4" target="_blank" rel="noopener" aria-label="单独播放：VR 自研机械臂遥操作">单独播放 ↗</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="motion" class="project-section" aria-labelledby="motion-title">
+        <div class="project-heading"><div><p class="project-index">项目 04 · 强化学习 / Sim2Real</p><h2 id="motion-title">人形机器人全身运动控制</h2></div><p>从仿真训练到真机部署，展示 G1 行走的仿真与真机执行，以及回旋踢、登高等全身运动。</p></div>
+        <div class="project-videos">
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/g1-walking-sim.jpg" aria-label="G1 行走 · 仿真"><source src="assets/web-videos/g1-walking-sim.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>仿真</span><span>0:13</span></div><h3>G1 行走 · 仿真</h3><p>手柄控制下的 G1 仿真行走演示。</p><a href="assets/web-videos/g1-walking-sim.mp4" target="_blank" rel="noopener" aria-label="单独播放：G1 行走 · 仿真">单独播放 ↗</a></div>
+          </article>
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/g1-walking-real.jpg" aria-label="G1 行走 · 真机"><source src="assets/web-videos/g1-walking-real.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>真机</span><span>0:13</span></div><h3>G1 行走 · 真机</h3><p>G1 在室内环境中的实际行走记录。</p><a href="assets/web-videos/g1-walking-real.mp4" target="_blank" rel="noopener" aria-label="单独播放：G1 行走 · 真机">单独播放 ↗</a></div>
+          </article>
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/g1-spinning-kick.jpg" aria-label="G1 回旋踢"><source src="assets/web-videos/g1-spinning-kick.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>真机</span><span>0:06</span></div><h3>G1 回旋踢</h3><p>高动态旋转与踢腿动作的真机执行记录。</p><a href="assets/web-videos/g1-spinning-kick.mp4" target="_blank" rel="noopener" aria-label="单独播放：G1 回旋踢">单独播放 ↗</a></div>
+          </article>
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/g1-step-up.jpg" aria-label="G1 登高"><source src="assets/web-videos/g1-step-up.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>真机</span><span>0:03</span></div><h3>G1 登高</h3><p>登高过程中的全身协调与支撑切换演示。</p><a href="assets/web-videos/g1-step-up.mp4" target="_blank" rel="noopener" aria-label="单独播放：G1 登高">单独播放 ↗</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="dexterous" class="project-section" aria-labelledby="dexterous-title">
+        <div class="project-heading"><div><p class="project-index">项目 05 · 机械臂 / 灵巧手</p><h2 id="dexterous-title">灵巧手抓取演示</h2></div><p>Franka 机械臂搭载灵巧手，展示桌面物体抓取与移动过程。</p></div>
+        <div class="project-videos single-video">
+          <article class="video-card">
+            <div class="media-frame">
+              <video controls playsinline preload="metadata" poster="assets/posters/franka-dexterous-grasp.jpg" aria-label="Franka 搭载灵巧手抓取"><source src="assets/web-videos/franka-dexterous-grasp.mp4" type="video/mp4">你的浏览器不支持视频播放，请使用下方链接单独打开。</video>
+              <p class="video-error" hidden>视频暂时无法播放，请尝试下方的“单独播放”。</p>
+            </div>
+            <div class="card-body"><div class="video-meta"><span>真机</span><span>1:15</span></div><h3>Franka 搭载灵巧手抓取</h3><p>记录机械臂接近目标、灵巧手抓握与物体移动的操作过程。</p><a href="assets/web-videos/franka-dexterous-grasp.mp4" target="_blank" rel="noopener" aria-label="单独播放：Franka 搭载灵巧手抓取">单独播放 ↗</a></div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <footer>付康 · 机器人项目视频展示</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
